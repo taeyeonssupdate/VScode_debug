@@ -2,8 +2,8 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++-11 建置使用中檔案",
-            "command": "/usr/local/bin/g++-11",
+            "label": "g++",
+            "command": "g++",
             "args": [
                 "-g",
                 "${file}",

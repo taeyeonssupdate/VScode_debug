@@ -2,8 +2,8 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "gcc-11",
-            "command": "/usr/local/bin/gcc-11",
+            "label": "gcc",
+            "command": "gcc",
             "args": [
                 "-g",
                 "${file}",
@@ -90,8 +90,8 @@
         },
         {
             "type": "cppbuild",
-            "label": "g++-11",
-            "command": "/usr/local/bin/g++-11",
+            "label": "g++",
+            "command": "g++",
             "args": [
                 "-g",
                 "${file}",

@@ -64,6 +64,18 @@ xcode-select --install
 ```shell
 brew install gcc
 ```
+###### create alias to shellrc
+bash:
+```
+echo 'alias gcc="/usr/local/bin/gcc-11"' >> ~/.bashrc 
+echo 'alias g++="/usr/local/bin/g++-11"' >> ~/.bashrc 
+```
+zsh:
+```
+echo 'alias gcc="/usr/local/bin/gcc-11"' >> ~/.zshrc
+echo 'alias g++="/usr/local/bin/g++-11"' >> ~/.zshrc 
+```
+
 
 #### Install JDK
 

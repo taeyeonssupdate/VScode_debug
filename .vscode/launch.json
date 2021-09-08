@@ -12,7 +12,7 @@
             "console": "integratedTerminal"
         },
         {
-            "name": "gcc-11",
+            "name": "gcc",
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -22,7 +22,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb",
-            "preLaunchTask": "gcc-11"
+            "preLaunchTask": "gcc"
         },
         {
             "name": "clang",
@@ -72,7 +72,7 @@
             "preLaunchTask": "clang++"
         },
         {
-            "name": "g++-11",
+            "name": "g++",
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -82,7 +82,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb",
-            "preLaunchTask": "g++-11"
+            "preLaunchTask": "g++"
         },
         {
             "name": "g++.exe",
