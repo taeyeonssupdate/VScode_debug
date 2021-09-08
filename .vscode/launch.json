@@ -5,11 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Current File",
+            "name": "Python",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Java",
+            "request": "launch",
+            "mainClass": "${file}"
         },
         {
             "name": "gcc",
@@ -25,6 +31,19 @@
             "preLaunchTask": "gcc"
         },
         {
+            "name": "g++",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "g++"
+        },
+        {
             "name": "clang",
             "type": "lldb",
             "request": "launch",
@@ -36,27 +55,6 @@
             "externalConsole": false,
             "MIMode": "lldb",
             "preLaunchTask": "clang"
-        },
-        {
-            "name": "gcc.exe",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
-            "setupCommands": [
-                {
-                    "description": "啟用 gdb 的美化顯示",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "gcc.exe"
         },
         {
             "name": "clang++",
@@ -72,20 +70,7 @@
             "preLaunchTask": "clang++"
         },
         {
-            "name": "g++",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "g++"
-        },
-        {
-            "name": "g++.exe",
+            "name": "gcc_win",
             "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -103,13 +88,28 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "g++.exe"
+            "preLaunchTask": "gcc_win"
         },
         {
-            "type": "java",
-            "name": "Java Current File",
+            "name": "g++_win",
+            "type": "lldb",
             "request": "launch",
-            "mainClass": "${file}"
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "啟用 gdb 的美化顯示",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "g++_win"
         }
     ]
 }
